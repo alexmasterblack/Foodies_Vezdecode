@@ -3,7 +3,6 @@
     <string name="main_icon">Заглавная иконка</string>
     <string name="nameText">Название блюда</string>
     <string name="tagText">Тэг</string>
-    <string name="priceButton">2 160 ₽</string>
     <string name="foodImage">Картинка еды</string>
     <string name="counter">0</string>
     <string name="logo">Логотип</string>
