@@ -11,6 +11,7 @@ import com.example.foodies_vezdecode.model.Category
 import com.example.foodies_vezdecode.storage.FetchJSON
 import com.example.foodies_vezdecode.storage.SharedPref
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -36,7 +37,7 @@ class MenuFragment : Fragment(R.layout.menu_fragment) {
             tab.text = categories[position].name
         }.attach()
 
-        view.findViewById<MaterialButton>(R.id.basketButton).setOnClickListener{
+        view.findViewById<FloatingActionButton>(R.id.cartToolbar).setOnClickListener{
             findNavController().navigate(R.id.action_menuFragment_to_cartFragment)
         }
     }
