@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Foodies_Vezdecode</string>
+    <string name="app_name">Foodies</string>
+    <string name="main_icon">Заглавная иконка</string>
+    <string name="nameText">Название блюда</string>
+    <string name="tagText">Тэг</string>
+    <string name="foodImage">Картинка еды</string>
+    <string name="counter">0</string>
+    <string name="logo">Логотип</string>
+    <string name="backButton">Кнопка назад</string>
+    <string name="weight">Вес</string>
+    <string name="energy">Энерг. ценность</string>
+    <string name="proteins">Белки</string>
+    <string name="fats">Жиры</string>
+    <string name="carbohydrates">Углеводы</string>
+    <string name="empty_cart">Пусто, выберите блюда в каталоге :)</string>
+    <string name="picture">Изображение еды</string>
+    <string name="ready">Готово</string>
+    <string name="dishes">Подобрать блюда</string>
 </resources>
