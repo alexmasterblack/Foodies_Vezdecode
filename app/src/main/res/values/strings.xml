@@ -15,4 +15,6 @@
     <string name="carbohydrates">Углеводы</string>
     <string name="empty_cart">Пусто, выберите блюда в каталоге :)</string>
     <string name="picture">Изображение еды</string>
+    <string name="ready">Готово</string>
+    <string name="dishes">Подобрать блюда</string>
 </resources>
