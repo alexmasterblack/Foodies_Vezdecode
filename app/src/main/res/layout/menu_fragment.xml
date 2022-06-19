@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_weight="0.5"
         android:contentDescription="@string/main_icon"
         android:src="@drawable/ic_logo_orange"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,21 +21,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/viewPager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iconApp"
-        app:tabGravity="fill"
         app:tabIndicator="@drawable/tab_indicator"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorColor="@color/orange"
         app:tabIndicatorGravity="stretch"
         app:tabIndicatorHeight="0dp"
-        app:tabMode="scrollable"
+        app:tabMode="auto"
         app:tabPaddingEnd="16dp"
         app:tabPaddingStart="16dp"
         app:tabSelectedTextColor="@color/white"
@@ -48,6 +48,12 @@
         app:layout_constraintBottom_toTopOf="@id/basketButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/tab_layout_shadow"
         app:layout_constraintTop_toBottomOf="@id/tabLayout" />
 
     <com.google.android.material.button.MaterialButton

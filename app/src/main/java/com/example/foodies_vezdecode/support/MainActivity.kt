@@ -1,17 +1,9 @@
 package com.example.foodies_vezdecode.support
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
+import androidx.appcompat.app.AppCompatActivity
 import com.example.foodies_vezdecode.R
-import com.example.foodies_vezdecode.adapter.RecyclerViewAdapter
-import com.example.foodies_vezdecode.adapter.ViewPagerAdapter
-import com.google.android.material.button.MaterialButton
-import com.google.android.material.tabs.TabLayout
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
 

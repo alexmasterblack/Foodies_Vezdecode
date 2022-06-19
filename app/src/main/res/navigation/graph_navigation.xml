@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_navigation.xml"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.foodies_vezdecode.fragments.MenuFragment"
+        android:label="MenuFragment">
+        <action
+            android:id="@+id/action_menuFragment_to_foodMenuDetailsFragment"
+            app:destination="@id/foodMenuDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="id"
+                app:argType="integer" />
+            <argument
+                android:name="foodName"
+                app:argType="string" />
+            <argument
+                android:name="foodDescription"
+                app:argType="string" />
+            <argument
+                android:name="weight"
+                app:argType="integer" />
+            <argument
+                android:name="energy"
+                app:argType="float" />
+            <argument
+                android:name="proteins"
+                app:argType="float" />
+            <argument
+                android:name="fats"
+                app:argType="float" />
+            <argument
+                android:name="carbohydrates"
+                app:argType="float" />
+            <argument
+                android:name="measureUnit"
+                app:argType="string" />
+            <argument
+                android:name="price"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_menuFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/foodMenuDetailsFragment"
+        android:name="com.example.foodies_vezdecode.fragments.FoodMenuDetailsFragment"
+        android:label="FoodMenuDetailsFragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="foodName"
+            app:argType="string" />
+        <argument
+            android:name="foodDescription"
+            app:argType="string" />
+        <argument
+            android:name="weight"
+            app:argType="integer" />
+        <argument
+            android:name="energy"
+            app:argType="float" />
+        <argument
+            android:name="proteins"
+            app:argType="float" />
+        <argument
+            android:name="fats"
+            app:argType="float" />
+        <argument
+            android:name="carbohydrates"
+            app:argType="float" />
+        <argument
+            android:name="measureUnit"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.foodies_vezdecode.fragments.CartFragment"
+        android:label="CartFragment" />
+</navigation>
